@@ -1,0 +1,39 @@
+
+@import './componentes/_mixins.sass'
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap')
+
+::-webkit-scrollbar
+  background-color: transparent
+  @include source-scale(auto, 0.3rem)
+::-webkit-scrollbar-thumb
+  background-color: $colorBor
+  border-radius: 3px
+*
+  margin: 0
+  padding: 0
+  @include txt-bg($colorTxt, transparent)
+  box-sizing: border-box
+  font-family: 'Raleway', sans-serif
+  scroll-behavior: smooth
+body
+  background-color: $colorBG
+  @include flex(column)
+  overflow-x: hidden
+header,footer
+  @include source-scale(auto, 100%)
+li
+  list-style: none
+a
+  text-decoration: none
+h1
+  font-size: 2.5rem
+h2
+  font-size: 1.6rem
+h3
+  font-size: 1.4rem
+h4
+  transition: 1s
+  font-size: 1rem
+p
+  transition: 1s
+  font-size: .85rem
